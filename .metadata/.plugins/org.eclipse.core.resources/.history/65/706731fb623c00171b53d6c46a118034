@@ -1,0 +1,13 @@
+package test.main;
+
+import java.util.ArrayList;
+
+import test.mypac.Apple;
+
+public class MainClass01 {
+	public static void main(String[] args) {
+		//Apple 객체를 저장할 수 있는 가변 배열 객체 생성
+		ArrayList<Apple> apples=new ArrayList()<Apple>();
+		
+	}
+}

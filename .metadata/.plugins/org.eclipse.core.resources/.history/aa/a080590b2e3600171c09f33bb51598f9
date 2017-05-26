@@ -1,0 +1,8 @@
+package test.star;
+
+public class Marine {
+	//일반 멤버 메소드
+	public void move(){
+		System.out.println("마린이 움직여요");
+	}
+}

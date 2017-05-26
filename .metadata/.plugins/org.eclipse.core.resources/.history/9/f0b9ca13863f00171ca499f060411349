@@ -1,0 +1,15 @@
+package test.main;
+
+public class MainClass05 {
+	public static void main(String[] args) {
+		System.out.println("메인 메소드가 시작 되었습니다.");
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}//문법적으로 반드시 적어야할 exception이 있음
+		System.out.println("메인 메소드가 종료 됩니다.");
+	}
+}

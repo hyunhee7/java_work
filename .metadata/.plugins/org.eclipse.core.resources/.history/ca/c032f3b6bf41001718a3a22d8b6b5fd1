@@ -1,0 +1,12 @@
+package test.main;
+
+public class MainClass04 {
+	public static void main(String[] args) {
+		new Thread(new Runnable(){
+			@Override
+			public void run() {
+				
+			}
+		});
+	}
+}

@@ -1,0 +1,11 @@
+package test.mypac;
+
+public class AppleBox {
+	//접근 지정자가 private 이면 클래스(객체) 안에서만 접근 가능하다
+	private Apple apple;
+	
+	public void push(Apple apple){
+		this.apple=apple;
+	}
+	
+}

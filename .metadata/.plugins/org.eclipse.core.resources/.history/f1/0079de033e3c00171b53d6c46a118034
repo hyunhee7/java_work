@@ -1,0 +1,11 @@
+package test.mypac;
+
+import javax.swing.JFrame;
+
+public class MyFrame extends JFrame{
+	// 생성자
+	public MyFrame(){
+		//프레임의 위치와 크기 설정
+		this.setBounds(100, 100, 500, 500);
+	}
+}

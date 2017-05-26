@@ -1,0 +1,24 @@
+package test.main;
+
+import java.util.HashSet;
+
+/*
+ *  HashSet
+ *  
+ *  - 순서가 없다
+ *  - 키값도 없다
+ *  - 중복을 허용하지 않는다.
+ */
+public class MainClass11 {
+	public static void main(String[] args) {
+		HashSet<String> set = new HashSet<String>();
+		//set interface가 있다.
+		set.add("김구라");
+		set.add("해골");
+		set.add("원숭이");
+		set.add("주뎅이");
+		set.add("덩어리");
+		set.add("김구라");
+		set.add("해골");
+	}
+}

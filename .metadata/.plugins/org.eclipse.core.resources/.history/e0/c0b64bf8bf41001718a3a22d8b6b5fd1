@@ -1,0 +1,20 @@
+package test.main;
+/*
+ *  익명의 클래스를 이용한 
+ *  간략하게 Thread 만들기
+ */
+public class MainClass04 {
+	public static void main(String[] args) {
+		System.out.println("메인 메소드가 시작 되었습니다.");
+		Thread t1=new Thread(new Runnable(){
+			@Override
+			public void run() {
+				
+			}
+			
+		});
+		t1.start();
+		
+		System.out.println("메인 메소드가 종료 됩니다.");
+	}
+}

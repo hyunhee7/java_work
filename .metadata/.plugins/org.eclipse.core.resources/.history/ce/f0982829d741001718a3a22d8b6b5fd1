@@ -1,0 +1,10 @@
+package test.main;
+
+import test.mypac.CountThread;
+
+public class MainClass05 {
+	public static void main(String[] args) {
+		Thread ct=new CountThread("ct", 3);
+		ct.start();
+	}
+}

@@ -1,0 +1,10 @@
+package test.main;
+
+public class MainClass03 {
+	public static void main(String[] args) {
+		String name1="김구라";
+		String name2="김구라";
+		
+		boolean result=name1==name2;
+	}
+}

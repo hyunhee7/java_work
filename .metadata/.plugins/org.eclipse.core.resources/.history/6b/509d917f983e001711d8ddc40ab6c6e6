@@ -1,0 +1,17 @@
+package test.main;
+/*
+ * [ HashMap ]
+ * 
+ * - key : value 형태로 데이터를 관리하고자 할 때 사용한다.
+ * - Generic 클래스는 2개를 지정해야한다. key Generic, value Generic
+ * - 데이터 저장 : .put(key, value)
+ * - 데이터 참조 : .get(key)
+ * - key 존재여부 확인 : .containerKey(key)
+ * - 데이터 모두 삭제 : .clear()
+ * - 특정 데이터 삭제 : .remove(key)
+ */
+public class MainClass08 {
+	public static void main(String[] args) {
+		
+	}
+}

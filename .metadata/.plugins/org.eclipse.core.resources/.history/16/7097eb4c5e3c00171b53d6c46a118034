@@ -1,0 +1,11 @@
+package test.main;
+
+import test.mypac.MyBox;
+
+public class MainClass02 {
+	public static void main(String[] args) {
+		MyBox<String> box1=new MyBox<String>();
+		box1.set("hello");
+		box1.get();
+	}
+}

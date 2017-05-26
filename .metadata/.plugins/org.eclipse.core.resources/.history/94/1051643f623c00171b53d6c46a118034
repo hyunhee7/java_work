@@ -1,0 +1,10 @@
+package test.main;
+
+import test.mypac.Apple;
+
+public class MainClass01 {
+	public static void main(String[] args) {
+		Apple[] apples=new Apple[5];
+		
+	}
+}
