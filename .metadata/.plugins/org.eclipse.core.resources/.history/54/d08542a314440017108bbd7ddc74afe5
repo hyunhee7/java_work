@@ -1,0 +1,9 @@
+package example3;
+/*
+ *  클라이언트가 전송하는 파일을 파일 시스템에 저장하는 예제
+ */
+public class ServerMain {
+	public static void main(String[] args) {
+		
+	}
+}

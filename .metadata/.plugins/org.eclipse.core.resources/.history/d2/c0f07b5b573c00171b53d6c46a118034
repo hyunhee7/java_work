@@ -1,6 +1,0 @@
-package test.mypac;
-
-public class MyPocket {
-	private A pocket;
-	
-}

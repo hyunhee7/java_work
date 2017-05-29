@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="test.mypac.Emart"/>
-<fullyQualifiedTypeName name="test.main.MainClass05"/>
-<fullyQualifiedTypeName name="test.mypac.Wrapper"/>
-<fullyQualifiedTypeName name="java.io.PrintStream"/>
-<fullyQualifiedTypeName name="test.mypac.AttackUnit"/>
-<fullyQualifiedTypeName name="test.mypac.Computer"/>
-<fullyQualifiedTypeName name="test.mypac.Cpu"/>
-<fullyQualifiedTypeName name="test.mypac.Memory"/>
-<fullyQualifiedTypeName name="test.mypac.HardDisk"/>
 <fullyQualifiedTypeName name="test.mypac.Person"/>
 <fullyQualifiedTypeName name="test.mypac.B"/>
 <fullyQualifiedTypeName name="test.com.Computer"/>
@@ -46,18 +37,27 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
-<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-<fullyQualifiedTypeName name="java.io.OutputStream"/>
-<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="test.mypac.AnotherThread"/>
+<fullyQualifiedTypeName name="test.mypac.YourThread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="test.mypac.CountThread"/>
+<fullyQualifiedTypeName name="test.mypac.Wallet"/>
+<fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 </qualifiedTypeNameHistroy>

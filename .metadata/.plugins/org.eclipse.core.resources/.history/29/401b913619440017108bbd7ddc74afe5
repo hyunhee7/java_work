@@ -1,0 +1,16 @@
+package example3;
+
+import java.net.Socket;
+
+public class FileDownThread extends Thread{
+	private Socket socket;
+	//생성자
+	public FileDownThread(Socket socket){
+		//인자로 전달받은 객체를 멤버필드에 저장하기
+		this.socket=socket;
+	}
+	@Override
+	public void run() {
+		
+	}
+}

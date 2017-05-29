@@ -1,6 +1,0 @@
-package test.mypac;
-
-public class AppleBox {
-	private Apple apple;
-	
-}

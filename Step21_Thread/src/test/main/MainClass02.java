@@ -16,7 +16,6 @@ public class MainClass02 {
 		//start() 메소드 호출해서 새로운 작업단위를 시작 시킨다.
 		at2.start();
 		
-		
 		System.out.println("메인 메소드가 종료 됩니다.");
 	}
 }

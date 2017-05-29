@@ -1,0 +1,11 @@
+package example1;
+
+import javax.swing.JFrame;
+
+public class HelloFrame extends JFrame{
+	//생성자
+	public HelloFrame(){
+		this.setBounds(100, 100, 200, 200);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+}
