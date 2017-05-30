@@ -1,0 +1,33 @@
+package example3;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class testProgram extends JFrame implements ActionListener{
+
+	//생성자
+	public testProgram(){
+		initUI();
+	}
+	//메소드 
+	public void initUI(){
+
+		//가로 세로 크기 지정하기 
+		setSize(800, 500);
+		//화면의 가운데 배치 되도록
+		setLocationRelativeTo(null);
+		setVisible(true);
+		// 창 닫을때 프로세스 종료 되도록 
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+				
+		
+	}	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+}

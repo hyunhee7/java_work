@@ -1,0 +1,24 @@
+package example3;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class testProgram extends JFrame implements ActionListener{
+
+	//생성자
+	public testProgram(){
+		initUI();
+	}
+	//메소드 
+	public void initUI(){
+	
+	}	
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		
+	}
+
+}

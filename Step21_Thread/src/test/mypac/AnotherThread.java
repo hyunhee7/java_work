@@ -8,7 +8,6 @@ package test.mypac;
  *  2. run() 메소드를 오버라이딩 한다.
  *     run 메소드 안에 새로운 스레드에서 작업하고 싶은 코딩을 한다.
  *  3. 새로운 Thread 가 필요한 시점에 객체를 생성하고 start() 메소드를 호출한다.
- *  4.
  */
 public class AnotherThread extends Thread{
 	@Override

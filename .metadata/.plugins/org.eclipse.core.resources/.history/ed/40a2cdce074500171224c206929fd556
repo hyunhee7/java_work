@@ -1,0 +1,67 @@
+package test.main;
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.table.DefaultTableModel;
+
+public class testProgram extends JFrame implements ActionListener{
+	//맴버필드 정의하기
+	JTextField inputNum, inputName, inputAddr;
+	DefaultTableModel model;
+	JButton saveBtn, deleteBtn, updateBtn;
+	JTable table;
+	
+	//생성자
+	public testProgram(){
+		initUI();
+	}
+	//메소드 
+	public void initUI(){
+
+		//레이아웃 설정
+		setLayout(new BorderLayout());
+		//상단 페널 객체 생성
+		JPanel topPanel=new JPanel();
+		
+		//레이블 객체 생성
+		JLabel label1=new JLabel("check");
+		JLabel label2=new JLabel("날짜");
+		JLabel label3=new JLabel("할 일");
+		
+		//텍스트 필드 객체 생성
+		inputNum=new JTextField(10);
+		inputName=new JTextField(10);
+		inputAddr=new JTextField(10);
+		
+		saveBtn=new JButton("저장");
+		deleteBtn=new JButton("삭제");
+		updateBtn=new JButton("수정");
+
+		//스크롤 할수 있는 UI 로 테이블을 감싼다. 
+		JScrollPane tablePanel=new JScrollPane(table);
+
+		//가로 세로 크기 지정하기 
+		setSize(800, 500);
+		//화면의 가운데 배치 되도록
+		setLocationRelativeTo(null);
+		setVisible(true);
+		// 창 닫을때 프로세스 종료 되도록 
+		setDefaultCloseOperation(EXIT_ON_CLOSE);	
+		
+	}	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+
+}

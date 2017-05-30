@@ -11,6 +11,8 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class MyFrame07 extends JFrame implements ActionListener{
+	JTextField inputText;
+	JTextArea textArea;
 	//생성자
 	public MyFrame07(){
 		initUI();
@@ -19,20 +21,24 @@ public class MyFrame07 extends JFrame implements ActionListener{
 	public void initUI(){
 		//레이아웃 설정
 		setLayout(new BorderLayout());
+
 		//페널 객체 생성하기
 		JPanel panel=new JPanel();
-		JTextField inputText=new JTextField(10);
+		inputText=new JTextField(10);
 		JButton sendBtn=new JButton("전송");
 
 		//버튼을 페널에 추가하기
 		panel.add(inputText);
 		panel.add(sendBtn);
+
 		//new JTextArea(row, column);
-		JTextArea textArea=new JTextArea(10, 10);
+		textArea=new JTextArea(10, 10);
+
 		//페널을 프레임의 북쪽에 추가하기
 		this.add(panel, BorderLayout.NORTH);
 		add(textArea, BorderLayout.CENTER);
-		
+		sendBtn.addActionListener(this);
+
 		//textArea.setText("hello");
 		textArea.append("one\r\n");
 		textArea.append("two\r\n");
@@ -48,8 +54,10 @@ public class MyFrame07 extends JFrame implements ActionListener{
 	}
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		
-		
+		String txt=inputText.getText();
+		textArea.append(txt);
+		textArea.append("\r\n");
+		inputText.setText("");
 	}
 }
 
