@@ -1,0 +1,79 @@
+package server;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
+
+public class BroadcastServer {
+	 //멤버필드
+	static List<ServerThread> threadList;
+	
+	public static void main(String[] args) {
+		//ArrayList 객체 생성해서 참조값을 static 멤버필드에 저장
+		threadList=new ArrayList<>();
+		ServerSocket serverSocket=null;
+		try{
+			serverSocket=new ServerSocket(5000);
+			while(true){
+				System.out.println("클라이언트의 접속을 대기...");
+				Socket socket=serverSocket.accept();
+				/*
+				 * 생성자의 인자로 클라이언트와 연결된 Socket 객체를
+				 * 전달하면서 객체를 생성하고 스레드를 시작 시킨다.
+				 */
+				ServerThread thread=new ServerThread(socket);
+				thread.start();
+				//생성한 스레드 객체의 참조값을 List에 누적시킨다.
+				threadList.add(thread);
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			try{
+				if(serverSocket!=null)serverSocket.close();
+			}catch(Exception e){}
+		}
+	}
+	//스레드 객체를 생성할 클래스를 inner class 로 정의하기
+	public static class ServerThread extends Thread{
+		//멤버 필드
+		Socket socket;
+		//생성자
+		public ServerThread(Socket socket){
+			this.socket=socket; //생성자의 인자로 socket객체를 받음
+		}
+		@Override
+		public void run() {
+			BufferedReader br=null;
+			BufferedWriter bw=null;
+			try{
+				br=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+				bw=new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+				boolean isRun=true;
+				//반복문 돌면서 읽어들인다.
+				while(isRun){
+					String msg=br.readLine();
+					if(msg==null){ // null 이면 접속이 끊긴 상태
+						isRun=false;
+					}else{
+						//#으로 구분해서 문자열을 배열로 얻어온다.
+						String[] result=msg.split("#");
+					}
+				}
+			}catch(Exception e){
+				e.printStackTrace();
+			}finally{
+				try{
+					if(br!=null)br.close();
+					if(bw!=null)bw.close();
+					if(socket!=null)socket.close();
+				}catch(Exception e){}
+			}
+		}
+	}
+}

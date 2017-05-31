@@ -1,0 +1,36 @@
+package server;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class BroadcastServer {
+	public static void main(String[] args) {
+		ServerSocket serverSocket=null;
+		try{
+			serverSocket=new ServerSocket(5000);
+			while(true){
+				System.out.println("클라이언트의 접속을 대기...");
+				Socket socket=serverSocket.accept();
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			try{
+				if(serverSocket!=null)serverSocket.close();
+			}
+		}
+	}
+	//스레드 객체를 생성할 클래스를 inner class 로 정의하기
+	public static class ServerThread extends Thread{
+		//멤버 필드
+		Socket socket;
+		//생성자
+		public ServerThread(Socket socket){
+			this.socket=socket;
+		}
+		@Override
+		public void run() {
+			
+		}
+	}
+}

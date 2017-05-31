@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="test.mypac.Weapon"/>
-<fullyQualifiedTypeName name="test.mypac.MyRemocon"/>
 <fullyQualifiedTypeName name="test.mypac.YourRemocon"/>
 <fullyQualifiedTypeName name="test.mypac.TVRemocon"/>
 <fullyQualifiedTypeName name="test.mypac.Remocon"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="javax.swing.JCheckBox"/>
+<fullyQualifiedTypeName name="javax.swing.JComboBox"/>
+<fullyQualifiedTypeName name="javax.swing.DefaultComboBoxModel"/>
 </qualifiedTypeNameHistroy>

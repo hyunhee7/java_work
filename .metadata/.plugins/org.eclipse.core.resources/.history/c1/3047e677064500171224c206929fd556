@@ -1,7 +1,0 @@
-package example3;
-
-import javax.swing.JFrame;
-
-public class testProgram extends JFrame implements ActionListener{
-
-}
