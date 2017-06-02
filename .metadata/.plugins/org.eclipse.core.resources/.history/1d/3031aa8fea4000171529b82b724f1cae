@@ -1,7 +1,0 @@
-package test.mypac;
-
-public class Apple {
-	public void add(){
-		System.out.println("hello");
-	}
-}
