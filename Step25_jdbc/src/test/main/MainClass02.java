@@ -41,7 +41,7 @@ public class MainClass02 {
 			//PreparedStatement 객체의 참조값 얻어오기
 			pstmt=conn.prepareStatement(sql);
 			// ? 에 값 바인딩하기
-			pstmt.setInt(1, num);;
+			pstmt.setInt(1, num);
 			//sql 문 실행하기
 			pstmt.executeUpdate();	//execute의 영향을 받은 row 의 개수가 return 된다.
 			System.out.println("회원정보를 저장했습니다.");

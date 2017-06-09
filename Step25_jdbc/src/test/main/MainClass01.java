@@ -44,7 +44,7 @@ public class MainClass01 {
 			//PreparedStatement 객체의 참조값 얻어오기
 			pstmt=conn.prepareStatement(sql);
 			// ? 에 값 바인딩하기
-			pstmt.setInt(1, num);;
+			pstmt.setInt(1, num);
 			pstmt.setString(2, name);
 			pstmt.setString(3, addr);
 			//sql 문 실행하기
