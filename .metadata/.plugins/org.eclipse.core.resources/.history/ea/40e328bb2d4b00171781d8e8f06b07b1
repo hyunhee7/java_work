@@ -1,9 +1,0 @@
-SELECT EMP_NAME AS 이름,
-	   SALARY*12 AS "1년 급여",
-	   ( SALARY+(SALARY*BONUS_PCT))*12 AS 총소득 
-FROM   EMPLOYEE;
-
-SELECT EMP_ID,
-       EMP_NAME,
-       '재직' AS 근무여부
-FROM   EMPLOYEE;
